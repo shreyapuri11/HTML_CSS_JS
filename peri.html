@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square Perimeter Calculator</title>
+  <script>
+    function calculatePerimeter() {
+      // Get the value entered by the user in the text box
+      var sideLength = document.getElementById('sideLength').value;
+
+      // Check if the input is a valid number
+      if (isNaN(sideLength) || sideLength <= 0) {
+        alert('Please enter a valid positive number for the side length.');
+        return;
+      }
+
+      // Calculate the perimeter of the square
+      var perimeter = 4 * sideLength;
+
+      // Display the perimeter in a dialogue box
+      alert('The perimeter of the square is: ' + perimeter);
+    }
+  </script>
+</head>
+<body>
+
+  <h2>Square Perimeter Calculator</h2>
+
+  <label for="sideLength">Enter side length:</label>
+  <input type="text" id="sideLength" placeholder="Enter a number">
+
+  <button onclick="calculatePerimeter()">Calculate Perimeter</button>
+
+</body>
+</html>

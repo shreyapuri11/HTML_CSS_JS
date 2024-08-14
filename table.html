@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="4" align="center">Purchased Equipment</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Item No.</td>
+            <td rowspan="2"> Item Image</td>
+            <td>Description</td>
+            <td>Price</td>
+        </tr>
+        <tr>
+            <td>Shipping</td>
+            <td>Expanse</td>
+        </tr>
+        <tr>
+            <td rowspan="2" >1</td>
+            <td rowspan="2"><img src="pc.jpg" alt="pc" width="50" height="50"></td>
+            <td>IBM</td>
+            <td>$400</td>
+        </tr>
+        <tr>
+            <td>Shipping</td>
+            <td>$40</td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">Total Cost</td>
+            <td>$440</td>
+        </tr>
+    </table>
+</body>
+</html>

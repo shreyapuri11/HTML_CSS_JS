@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anonymous Function Example</title>
+  <script>
+    // Anonymous function assigned to a variable
+    var greet = function(name) {
+      alert('Hello, ' + name + '!');
+    };
+
+    // Another example: Immediate invocation of an anonymous function
+    (function() {
+      var message = 'This is an immediately invoked anonymous function.';
+      console.log(message);
+    })();
+  </script>
+</head>
+<body>
+
+  <h1>Anonymous Function Example</h1>
+
+  <button onclick="greet('John')">Say Hello</button>
+
+</body>
+</html>
